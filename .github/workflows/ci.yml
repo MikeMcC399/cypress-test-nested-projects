@@ -2,7 +2,7 @@ name: Cypress tests
 on: workflow_dispatch
 jobs:
   cypress-bar:
-    name: Cypress run
+    name: Cypress bar
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -13,7 +13,7 @@ jobs:
           project: ./src/clients/bar
 
   cypress-foo:
-    name: Cypress run
+    name: Cypress foo
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
