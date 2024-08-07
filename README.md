@@ -1,7 +1,5 @@
 # cypress-test-nested-projects
 
-[![CircleCI](https://circleci.com/gh/cypress-io/cypress-test-nested-projects.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress-test-nested-projects)
-
 Folder structure:
 
 ```
