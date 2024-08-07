@@ -1,0 +1,24 @@
+name: Cypress tests
+on: workflow_dispatch
+jobs:
+  cypress-bar:
+    name: Cypress run
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          project: ./src/clients/bar
+
+  cypress-foo:
+    name: Cypress run
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          project: ./src/clients/foo
